@@ -17,12 +17,10 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.list);
         // создаем адаптер
         Adapter adapter = new Adapter(this, phones);
-        // устанавливаем для списка адаптер
         recyclerView.setAdapter(adapter);
     }
 
     private void setInitialData(){
-
         phones.add(new Chat ("Ali Connors", "Brunch this weekend?", "I‘ll ve in your neighborhood doing errands...."));
         phones.add(new Chat ("me, Scott, Jennifer", "Summer BBQ", "Aw dang. Wish I could but I‘m outta town...."));
         phones.add(new Chat ("Sandra Adams", "Oui Oui", "Do you have Paris recommendations? Ha......"));
